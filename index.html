@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papa Daouda Samb - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#accueil" class="logo"><PS /></a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#accueil" class="nav-link active">Accueil</a>
+                <a href="#apropos" class="nav-link">À propos</a>
+                <a href="#competences" class="nav-link">Compétences</a>
+                <a href="#projets" class="nav-link">Projets</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <button class="menu-btn" id="menuBtn">
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#accueil" class="mobile-link">Accueil</a>
+            <a href="#apropos" class="mobile-link">À propos</a>
+            <a href="#competences" class="mobile-link">Compétences</a>
+            <a href="#projets" class="mobile-link">Projets</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Section Accueil / Hero -->
+    <section id="accueil" class="hero">
+        <!-- Background blobs -->
+        <div class="hero-background">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+
+        <div class="hero-container">
+            <!-- Avatar / Logo -->
+            <div class="avatar-wrapper">
+                <div class="avatar-border">
+                    <div class="avatar">
+                        <span class="avatar-text">PS</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="hero-content">
+                <span class="hero-badge">Bienvenue sur mon portfolio</span>
+
+                <h1 class="hero-title">
+                    Papa Daouda
+                    <span class="gradient-text">Samb</span>
+                </h1>
+
+                <h2 class="hero-subtitle">
+                    Développeur Frontend & Designer UI/UX
+                </h2>
+
+                <p class="hero-description">
+                    Passionné par la création d'expériences digitales exceptionnelles,
+                    je transforme vos idées en applications modernes, performantes et élégantes.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projets" class="btn btn-primary">
+                        <span class="btn-text">Voir mes projets</span>
+                        <span class="btn-icon">→</span>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        Me contacter
+                    </a>
+                </div>
+
+                <!-- Social Links -->
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Email">
+                        <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span class="scroll-text">Défiler</span>
+        </div>
+    </section>
+          <!-- SECTION À PROPOS -->
+    <section id="apropos" class="about">
+        <!-- Background -->
+        <div class="about-background">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+
+        <div class="about-container">
+            <h2 class="section-title">À propos de moi</h2>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Mon parcours</h3>
+                    <p>Passionné par la technologie depuis toujours, j'ai décidé de me former au développement web. Actuellement, je metrise le HTML, CSS et JavaScript pour ainssi devenir développeur front-end.</p>
+
+                    <h3>Ma philosophie</h3>
+                    <p>Je crois qu'un bon site web doit être à la fois beau, fonctionnel et accessible à tous. J'aime apprendre de nouvelles technologies et résoudre des problèmes complexes.</p>
+
+                    <div class="about-info">
+                        <div class="info-item">
+                            <strong>Ville :</strong>
+                            <span>Dakar</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Disponibilité :</strong>
+                            <span>À temps plein</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Email :</strong>
+                            <span>devosamb@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-stats">
+                    <div class="stat">
+                        <div class="stat-number">2</div>
+                        <div class="stat-text">Projets complétés</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">1</div>
+                        <div class="stat-text">En cours de réalisation</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">2</div>
+                        <div class="stat-text">Certifications</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="competences">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Compétences</p>
+                <h2 class="section-title">Mon expertise technique</h2>
+            </div>
+
+            <div class="skills-grid" id="skillsGrid"></div>
+
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="24" height="24">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="2" y1="12" x2="22" y2="12"/>
+                            <path d="m12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                    </div>
+                    <p>Web Apps</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="24" height="24">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                            <line x1="12" y1="18" x2="12" y2="18"/>
+                        </svg>
+                    </div>
+                    <p>Mobile</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="24" height="24">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1 1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                        </svg>
+                    </div>
+                    <p>APIs</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="24" height="24">
+                            <path d="m14.828 14.828a4 4 0 0 1-5.656 0"/>
+                            <path d="M9 10h6"/>
+                            <path d="M9 14h6"/>
+                            <path d="M12 2v2"/>
+                            <path d="M12 8v2"/>
+                            <path d="M12 14v2"/>
+                            <path d="M12 20v2"/>
+                        </svg>
+                    </div>
+                    <p>Design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Projets -->
+    <section id="projets" class="projects">
+        <!-- Background -->
+        <div class="projects-background">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+
+        <div class="projects-container">
+            <!-- Header -->
+            <div class="section-header">
+                <span class="section-badge">Portfolio</span>
+                <h2 class="section-title">
+                    Mes projets <span class="gradient-text">récents</span>
+                </h2>
+                <p class="section-description">
+                    Découvrez une sélection de mes réalisations les plus significatives
+                </p>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid" id="projectsGrid"></div>
+
+            <!-- View More Button -->
+            <div class="view-more">
+                <button class="btn btn-outline" id="viewMoreBtn">
+                    Voir tous les projets
+                    <span class="btn-icon">→</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Section Contact / Travaillons ensemble -->
+    <section id="contact" class="contact">
+        <!-- Background blobs -->
+        <div class="contact-background">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+
+        <div class="contact-container">
+            <!-- Header -->
+            <div class="section-header">
+                <span class="section-badge">Contact</span>
+                <h2 class="section-title">
+                    Travaillons <span class="gradient-text">ensemble</span>
+                </h2>
+                <p class="section-description">
+                    Vous avez un projet ? Discutons de la façon dont je peux vous aider.
+                </p>
+            </div>
+
+            <!-- Contact Cards -->
+            <div class="contact-cards">
+                <!-- Email Card -->
+                <div class="contact-card" id="emailCard">
+                    <div class="card-icon-wrapper">
+                        <div class="card-icon">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Email</h3>
+                        <a href="mailto:devosamb@gmail.com" class="card-value">devosamb@gmail.com</a>
+                        <span class="card-status">
+                            <span class="status-dot"></span>
+                            Réponse sous 24h
+                        </span>
+                    </div>
+                    <button class="copy-btn" data-copy="devosamb@gmail.com" aria-label="Copier l'email">
+                        <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Phone Card -->
+                <div class="contact-card" id="phoneCard">
+                    <div class="card-icon-wrapper">
+                        <div class="card-icon">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M22 16.92v3a1.999 1.999 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8 10a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.574 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Téléphone</h3>
+                        <a href="tel:+221772783250" class="card-value">+221 77 278 32 50</a>
+                        <span class="card-status">
+                            <span class="status-dot"></span>
+                            Disponible 9h-18h
+                        </span>
+                    </div>
+                    <button class="copy-btn" data-copy="+221772783250" aria-label="Copier le téléphone">
+                        <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Location Card -->
+                <div class="contact-card" id="locationCard">
+                    <div class="card-icon-wrapper">
+                        <div class="card-icon">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Localisation</h3>
+                        <span class="card-value">Dakar, Senegal</span>
+                        <span class="card-status">
+                            <span class="status-dot"></span>
+                            Disponible en remote
+                        </span>
+                    </div>
+                    <button class="map-btn" id="mapBtn" aria-label="Voir sur la carte">
+                        <svg class="map-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21 3 6"/>
+                            <line x1="9" y1="3" x2="9" y2="18"/>
+                            <line x1="15" y1="6" x2="15" y2="21"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="quick-actions">
+                <a href="mailto:devosamb@gmail.com" class="action-btn">
+                    <svg class="action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    Envoyer un email
+                </a>
+                <a href="tel:+221772783250" class="action-btn">
+                    <svg class="action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M22 16.92v3a1.999 1.999 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8 10a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.574 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    Appeler maintenant
+                </a>
+            </div>
+
+            <!-- Toast Notification -->
+            <div id="toast" class="toast">
+                <span id="toastMessage"></span>
+            </div>
+
+            <!-- Map Modal (pour la localisation) -->
+            <div id="mapModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Dakar, Senegal</h3>
+                        <button class="close-btn" id="closeModal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="map-placeholder">
+                            <div class="map-marker">
+                                <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="#3b82f6">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3" fill="#3b82f6"/>
+                                </svg>
+                            </div>
+                            <p class="map-coords">14.6928° N, 17.4467° O</p>
+                            <div class="map-actions">
+                                <a href="https://maps.google.com/?q=Dakar,Senegal" target="_blank" class="map-link">
+                                    Ouvrir dans Google Maps
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; Dev'S 2026. Tous droits réservés.</p>
+            <p>Développé avec amour et beaucoup de rigueur</p>
+        </div>
+    </footer>
+    
+    <!-- LIEN VERS LE JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
+</body>
+</html>
