@@ -268,12 +268,12 @@ if ('IntersectionObserver' in window) {
 
 // Données des compétences
 const skillsData = [
-    { name: "React / Next.js", level: 92, icon: "⚛️", category: "expert" },
-    { name: "TypeScript", level: 88, icon: "📘", category: "avance" },
-    { name: "Node.js / Express", level: 85, icon: "🟢", category: "avance" },
-    { name: "Python / Django", level: 80, icon: "🐍", category: "avance" },
-    { name: "UI/UX Design", level: 78, icon: "🎨", category: "intermediaire" },
-    { name: "React Native", level: 70, icon: "📱", category: "intermediaire" }
+    { name: "HTML / CSS", level: 90, icon: "🎨", category: "expert" },
+    { name: "JavaScript / TypeScript", level: 85, icon: "📘", category: "avance" },
+    { name: "React", level: 80, icon: "⚛️", category: "avance" },
+    { name: "Node.js / Express", level: 75, icon: "🟢", category: "intermediaire" },
+    { name: "Git / GitHub", level: 85, icon: "🔧", category: "avance" },
+    { name: "UI/UX Design", level: 70, icon: "📱", category: "intermediaire" }
 ];
 
 // Fonction pour déterminer le niveau textuel
@@ -757,40 +757,47 @@ if ('serviceWorker' in navigator) {
     });
 }
 
-// Données des projets (3 projets seulement)
+// Données des projets (repos GitHub réels)
 const projectsData = [
     {
         id: 1,
-        title: "E-Commerce Platform",
-        description: "Plateforme e-commerce complète avec paiement intégré, gestion des stocks en temps réel et tableau de bord analytique. Interface utilisateur intuitive et expérience d'achat fluide.",
-        tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
-        stats: { stars: 128, users: "2.5k" },
-        color: "ecommerce",
-        icon: "🛍️",
-        github: "#",
-        demo: "#"
+        title: "Bureau-Eguette",
+        description: "Application de gestion intelligente pour restaurants : suivi des commandes, caisse et reporting quotidien, pensée pour les restaurateurs sénégalais.",
+        tags: ["TypeScript", "JavaScript"],
+        color: "taskmanager",
+        icon: "🍽️",
+        github: "https://github.com/Daoudasamb29/Bureau-Eguette",
+        demo: ""
     },
     {
         id: 2,
-        title: "Task Manager Pro",
-        description: "Application de gestion de projets collaborative avec tableau Kanban, calendrier interactif, et notifications en temps réel via WebSocket. Idéale pour les équipes agiles.",
-        tags: ["React", "Node.js", "Socket.io", "MongoDB"],
-        stats: { stars: 95, users: "1.8k" },
-        color: "taskmanager",
-        icon: "✅",
-        github: "#",
-        demo: "#"
+        title: "Artisanpro",
+        description: "Application de gestion de devis pour artisans : création, envoi et suivi des devis clients.",
+        tags: ["TypeScript", "JavaScript"],
+        color: "aigenerator",
+        icon: "🔧",
+        github: "https://github.com/Daoudasamb29/Artisanpro",
+        demo: ""
     },
     {
         id: 3,
-        title: "AI Content Generator",
-        description: "Outil de génération de contenu assisté par IA avec interface intuitive, historique des générations, templates personnalisables et export multi-format.",
-        tags: ["Python", "FastAPI", "React", "OpenAI"],
-        stats: { stars: 210, users: "5k" },
-        color: "aigenerator",
-        icon: "🤖",
-        github: "#",
-        demo: "#"
+        title: "Tech Store",
+        description: "Site e-commerce Tech Store Sénégal : catalogue produits, panier et parcours d'achat complet.",
+        tags: ["TypeScript", "JavaScript", "API"],
+        color: "ecommerce",
+        icon: "🛍️",
+        github: "https://github.com/Daoudasamb29/tech-store",
+        demo: ""
+    },
+    {
+        id: 4,
+        title: "DEM — Transport intercity",
+        description: "Application de transport inter-villes au Sénégal avec réservation via WhatsApp.",
+        tags: ["HTML", "JavaScript", "WhatsApp"],
+        color: "taskmanager",
+        icon: "🚌",
+        github: "https://github.com/Daoudasamb29/DEM",
+        demo: ""
     }
 ];
 
@@ -802,23 +809,7 @@ function createProjectCard(project) {
                 <div class="project-icon">
                     <span style="font-size: 5rem;">${project.icon}</span>
                 </div>
-                <div class="project-stats">
-                    <span class="stat-badge">
-                        <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-                        </svg>
-                        ${project.stats.stars}
-                    </span>
-                    <span class="stat-badge">
-                        <svg class="stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                            <circle cx="9" cy="7" r="4"/>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                        </svg>
-                        ${project.stats.users}
-                    </span>
-                </div>
+                
             </div>
             <div class="project-content">
                 <h3 class="project-title">${project.title}</h3>
@@ -827,19 +818,19 @@ function createProjectCard(project) {
                     ${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
                 </div>
                 <div class="project-actions">
-                    <a href="${project.github}" class="project-link">
+                    <a href="${project.github}" class="project-link" target="_blank" rel="noopener">
                         <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                             <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
                         </svg>
                         Code source
                     </a>
-                    <a href="${project.demo}" class="project-link">
+                    <a href="${project.demo || project.github}" class="project-link" target="_blank" rel="noopener">
                         <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
                             <polyline points="15 3 21 3 21 9"/>
                             <line x1="10" y1="14" x2="21" y2="3"/>
                         </svg>
-                        Démo en direct
+                        Voir le projet
                     </a>
                 </div>
             </div>
@@ -879,21 +870,7 @@ function addProjectEvents() {
     });
 
     // Suivi des clics sur les projets
-    document.querySelectorAll('.project-link').forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const action = this.textContent.trim();
-            const projectTitle = this.closest('.project-card').querySelector('.project-title').textContent;
-
-            console.log(`🔗 Action: ${action} - Projet: ${projectTitle}`);
-
-            // Ici vous pouvez ajouter Google Analytics ou autre tracking
-            // trackProjectClick(projectTitle, action);
-
-            // Simuler une ouverture de lien
-            alert(`Lien vers ${action} du projet "${projectTitle}"`);
         });
-    });
 
     // Animation d'entrée des cartes
     document.querySelectorAll('.project-card').forEach((card, index) => {
@@ -931,7 +908,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const viewMoreBtn = document.getElementById('viewMoreBtn');
     if (viewMoreBtn) {
         viewMoreBtn.addEventListener('click', () => {
-            alert('🚀 Plus de projets bientôt disponibles !');
+            window.open('https://github.com/Daoudasamb29?tab=repositories', '_blank');
 
             // Animation du bouton
             viewMoreBtn.style.transform = 'scale(0.95)';
