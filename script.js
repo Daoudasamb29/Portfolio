@@ -413,7 +413,7 @@ function animateCircles() {
 }
 
 // Compteur animé pour les statistiques
-function animateCounter(element, target, duration = 2000) {
+function animateCounterStat(element, target, duration = 2000) {
     let start = 0;
     const increment = target / (duration / 16);
 
@@ -471,7 +471,7 @@ function createSkillCardsWithCounter() {
 
                 // Animer le compteur
                 const counter = entry.target.querySelector('.counter');
-                animateCounter(counter, skillLevel);
+                animateCounterStat(counter, skillLevel);
             }
         });
     }, { threshold: 0.3 });
@@ -748,15 +748,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Service Worker pour le offline (optionnel)
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js').catch(err => {
-            console.log('ServiceWorker non supporté : ', err);
-        });
-    });
-}
-
 // Données des projets (repos GitHub réels)
 const projectsData = [
     {
@@ -868,9 +859,6 @@ function addProjectEvents() {
             this.style.transform = 'scale(1)';
         });
     });
-
-    // Suivi des clics sur les projets
-        });
 
     // Animation d'entrée des cartes
     document.querySelectorAll('.project-card').forEach((card, index) => {
